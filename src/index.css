@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,400;500;600;700,25&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope", "Segoe UI", sans-serif;
+  --font-serif: "Fraunces", Georgia, serif;
+  --color-canvas: #f4efe8;
+  --color-surface: #fffaf3;
+  --color-surface-strong: #efe4d4;
+  --color-ink: #1f1c17;
+  --color-muted: #675f55;
+  --color-line: #ded4c6;
+  --color-accent: #3f5a56;
+  --color-accent-soft: #d9e3df;
+  --color-highlight: #af7b4f;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background: var(--color-canvas);
+  }
+
+  body {
+    min-height: 100vh;
+    background:
+      radial-gradient(circle at top left, rgba(63, 90, 86, 0.16), transparent 28%),
+      linear-gradient(180deg, #f8f3ec 0%, #f4efe8 56%, #f0e8dd 100%);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    text-rendering: optimizeLegibility;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+      linear-gradient(rgba(214, 204, 191, 0.14) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(214, 204, 191, 0.14) 1px, transparent 1px);
+    background-size: 88px 88px;
+    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.26), transparent 75%);
+    z-index: -1;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  ::selection {
+    background: rgba(63, 90, 86, 0.18);
+    color: var(--color-ink);
+  }
+
+  [id] {
+    scroll-margin-top: 6.5rem;
+  }
+}
+
+@layer components {
+  .panel {
+    @apply rounded-[1.75rem] border border-line/80 bg-surface/88 shadow-[0_24px_70px_rgba(28,25,21,0.08)] backdrop-blur-sm;
+  }
+
+  .card-surface {
+    @apply rounded-[1.5rem] border border-line/70 bg-surface/92 shadow-[0_14px_35px_rgba(28,25,21,0.08)] backdrop-blur-sm;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.24em] text-muted/80;
+  }
+
+  .section-title {
+    @apply max-w-4xl text-3xl font-semibold tracking-tight text-ink sm:text-4xl lg:text-[2.85rem];
+  }
+
+  .muted-copy {
+    @apply text-base leading-8 text-muted sm:text-lg;
+  }
+
+  .text-link {
+    @apply inline-flex items-center gap-2 text-sm font-semibold text-accent transition-colors duration-200 hover:text-ink;
+  }
+}
