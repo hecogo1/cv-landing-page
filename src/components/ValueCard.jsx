@@ -41,16 +41,26 @@ const icons = {
   ),
 };
 
-export function ValueCard({ icon, title, text }) {
+export function ValueCard({ icon, title, text, variant = 'light' }) {
+  const isDark = variant === 'dark';
+
   return (
-    <article className="card-surface h-full p-7 sm:p-8">
-      <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-accent-soft text-accent">
-        <svg viewBox="0 0 24 24" className="h-6 w-6" aria-hidden="true">
+    <article className={`group h-full rounded-2xl p-7 sm:p-8 transition-all duration-300 ${
+      isDark
+        ? 'border border-white/10 bg-white/[0.06] hover:bg-white/[0.1]'
+        : 'card-surface'
+    }`}>
+      <div className={`flex h-10 w-10 items-center justify-center rounded-xl transition-colors duration-300 ${
+        isDark
+          ? 'bg-white/10 text-white group-hover:bg-white/20'
+          : 'bg-accent-soft text-accent group-hover:bg-accent group-hover:text-white'
+      }`}>
+        <svg viewBox="0 0 24 24" className="h-5 w-5" aria-hidden="true">
           {icons[icon]}
         </svg>
       </div>
-      <h3 className="mt-6 text-xl font-semibold tracking-tight text-ink">{title}</h3>
-      <p className="mt-4 text-base leading-8 text-muted">{text}</p>
+      <h3 className={`mt-5 text-lg font-semibold tracking-tight ${isDark ? 'text-white' : 'text-ink'}`}>{title}</h3>
+      <p className={`mt-3 text-[0.9375rem] leading-[1.8] ${isDark ? 'text-white/65' : 'text-muted'}`}>{text}</p>
     </article>
   );
 }

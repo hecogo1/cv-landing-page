@@ -17,7 +17,7 @@ export function BackToTopButton() {
       {isVisible ? (
         <motion.a
           href="#top"
-          className="fixed bottom-5 right-5 z-30 inline-flex h-12 w-12 items-center justify-center rounded-full border border-line bg-surface/92 text-ink shadow-[0_18px_35px_rgba(28,25,21,0.12)] backdrop-blur-sm transition-colors hover:bg-surface"
+          className="fixed bottom-5 right-5 z-30 inline-flex h-10 w-10 items-center justify-center rounded-lg border border-line/50 bg-surface text-ink shadow-[0_2px_8px_rgba(0,0,0,0.08)] transition-colors hover:bg-accent hover:text-white"
           aria-label="Back to top"
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}

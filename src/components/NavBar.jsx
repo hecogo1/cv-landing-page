@@ -19,15 +19,12 @@ export function NavBar({ brand, links, cvUrl }) {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <header className="sticky top-0 z-40 px-4 pt-4 sm:px-6 lg:px-8">
+    <header className="sticky top-0 z-40 px-4 pt-3 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-6xl">
-        <div className="panel px-5 py-4 sm:px-6">
+        <div className="rounded-xl border border-line/50 bg-surface/95 px-5 py-3 shadow-[0_1px_3px_rgba(0,0,0,0.04)] backdrop-blur-md sm:px-6">
           <div className="flex items-center justify-between gap-4">
             <a href="#top" className="min-w-0">
-              <span className="block truncate text-sm font-semibold uppercase tracking-[0.24em] text-muted/80">
-                Personal website
-              </span>
-              <span className="mt-1 block text-base font-semibold text-ink sm:text-lg">{brand}</span>
+              <span className="block text-base font-bold tracking-tight text-ink">{brand}</span>
             </a>
             <nav className="hidden items-center gap-6 md:flex" aria-label="Primary">
               {links.map((link) => (
@@ -79,7 +76,7 @@ export function NavBar({ brand, links, cvUrl }) {
             {isOpen ? (
               <motion.nav
                 id="mobile-navigation"
-                className="mt-4 border-t border-line/70 pt-4 md:hidden"
+                className="mt-3 border-t border-line/50 pt-3 md:hidden"
                 aria-label="Mobile navigation"
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: 'auto' }}

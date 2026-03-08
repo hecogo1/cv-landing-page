@@ -4,15 +4,15 @@
 @theme {
   --font-sans: "Manrope", "Segoe UI", sans-serif;
   --font-serif: "Fraunces", Georgia, serif;
-  --color-canvas: #f4efe8;
-  --color-surface: #fffaf3;
-  --color-surface-strong: #efe4d4;
-  --color-ink: #1f1c17;
-  --color-muted: #675f55;
-  --color-line: #ded4c6;
-  --color-accent: #3f5a56;
-  --color-accent-soft: #d9e3df;
-  --color-highlight: #af7b4f;
+  --color-canvas: #f7f5f0;
+  --color-surface: #ffffff;
+  --color-surface-strong: #eee9e0;
+  --color-ink: #1a1714;
+  --color-muted: #6b6560;
+  --color-line: #e2ddd5;
+  --color-accent: #2d4a46;
+  --color-accent-soft: #e0ebe8;
+  --color-highlight: #b07840;
 }
 
 @layer base {
@@ -24,24 +24,13 @@
   body {
     min-height: 100vh;
     background:
-      radial-gradient(circle at top left, rgba(63, 90, 86, 0.16), transparent 28%),
-      linear-gradient(180deg, #f8f3ec 0%, #f4efe8 56%, #f0e8dd 100%);
+      radial-gradient(ellipse 80% 50% at 20% 0%, rgba(45,74,70,0.06), transparent),
+      radial-gradient(ellipse 60% 40% at 80% 100%, rgba(176,120,64,0.05), transparent),
+      linear-gradient(180deg, #faf8f4 0%, #f7f5f0 40%, #f3efe8 100%);
     color: var(--color-ink);
     font-family: var(--font-sans);
     text-rendering: optimizeLegibility;
-  }
-
-  body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    background-image:
-      linear-gradient(rgba(214, 204, 191, 0.14) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(214, 204, 191, 0.14) 1px, transparent 1px);
-    background-size: 88px 88px;
-    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.26), transparent 75%);
-    z-index: -1;
+    -webkit-font-smoothing: antialiased;
   }
 
   a {
@@ -49,37 +38,88 @@
   }
 
   ::selection {
-    background: rgba(63, 90, 86, 0.18);
+    background: rgba(45, 74, 70, 0.15);
     color: var(--color-ink);
   }
 
   [id] {
-    scroll-margin-top: 6.5rem;
+    scroll-margin-top: 5rem;
+  }
+
+  img {
+    user-select: none;
+    -webkit-user-drag: none;
   }
 }
 
 @layer components {
   .panel {
-    @apply rounded-[1.75rem] border border-line/80 bg-surface/88 shadow-[0_24px_70px_rgba(28,25,21,0.08)] backdrop-blur-sm;
+    @apply rounded-2xl border border-line/60 bg-surface shadow-[0_1px_3px_rgba(0,0,0,0.04),0_8px_30px_rgba(0,0,0,0.04)];
   }
 
   .card-surface {
-    @apply rounded-[1.5rem] border border-line/70 bg-surface/92 shadow-[0_14px_35px_rgba(28,25,21,0.08)] backdrop-blur-sm;
+    @apply rounded-2xl border border-line/50 bg-surface shadow-[0_1px_2px_rgba(0,0,0,0.03),0_4px_16px_rgba(0,0,0,0.03)] transition-all duration-300 hover:shadow-[0_2px_6px_rgba(0,0,0,0.06),0_12px_40px_rgba(0,0,0,0.06)] hover:-translate-y-0.5;
   }
 
   .eyebrow {
-    @apply text-xs font-semibold uppercase tracking-[0.24em] text-muted/80;
+    @apply text-[0.6875rem] font-bold uppercase tracking-[0.2em] text-accent;
   }
 
   .section-title {
-    @apply max-w-4xl text-3xl font-semibold tracking-tight text-ink sm:text-4xl lg:text-[2.85rem];
+    @apply font-serif text-3xl font-semibold tracking-tight text-ink sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1];
   }
 
   .muted-copy {
-    @apply text-base leading-8 text-muted sm:text-lg;
+    @apply text-base leading-[1.8] text-muted sm:text-[1.0625rem];
   }
 
   .text-link {
-    @apply inline-flex items-center gap-2 text-sm font-semibold text-accent transition-colors duration-200 hover:text-ink;
+    @apply inline-flex items-center gap-1.5 text-sm font-semibold text-accent underline decoration-accent/30 underline-offset-4 transition-colors duration-200 hover:text-ink hover:decoration-ink/40;
+  }
+
+  .section-dark {
+    @apply bg-accent text-white;
+  }
+
+  .section-dark .eyebrow {
+    @apply text-white/60;
+  }
+
+  .section-dark .section-title {
+    @apply text-white;
+  }
+
+  .section-dark .muted-copy {
+    @apply text-white/70;
+  }
+
+  .section-alt {
+    position: relative;
+    background: linear-gradient(135deg, rgba(45,74,70,0.03) 0%, rgba(176,120,64,0.02) 100%);
+  }
+
+  .section-alt::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle 600px at 10% 50%, rgba(45,74,70,0.04), transparent);
+    pointer-events: none;
+  }
+
+  .photo-frame {
+    @apply overflow-hidden rounded-2xl;
+  }
+
+  .photo-frame img {
+    @apply h-full w-full object-cover transition-transform duration-700 ease-out;
+  }
+
+  .photo-frame:hover img {
+    @apply scale-[1.03];
+  }
+
+  .gradient-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--color-line), transparent);
   }
 }
