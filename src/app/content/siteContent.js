@@ -290,7 +290,7 @@ export const siteContent = {
     title: 'What I’m building next',
     paragraphs: [
       'I want to keep growing on the technical side while staying close to the kind of work that has always suited me best: improving systems, accelerating teams, and turning scattered or inefficient ways of working into clearer and more scalable ones.',
-      'I am especially interested in environments where data engineering, analytics, automation, tooling adoption, and practical technical judgment matter more than buzzwords.',
+      'I am especially interested in environments where Bitcoin, Blockchain, Data Science, AI, and Cutting Edge Technology are driving Real World Impact. Ultimately, I believe that while technology is the tool, people and soft skills are the core of any successful project.',
     ],
   },
   contact: {
