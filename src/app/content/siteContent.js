@@ -35,7 +35,7 @@ export const siteContent = {
     { label: 'Summary', href: '#summary' },
     { label: 'Story', href: '#story' },
     { label: 'Timeline', href: '#timeline' },
-    { label: 'Transformations', href: '#transformations' },
+    { label: 'Impact', href: '#transformations' },
     { label: 'Contact', href: '#contact' },
   ],
   hero: {
