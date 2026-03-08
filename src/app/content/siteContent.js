@@ -11,9 +11,9 @@ export const siteContent = {
     trajectoryLabel: 'Psychology → Research → Data → Systems',
   },
   links: {
-    linkedinUrl: 'https://www.linkedin.com/in/replace-with-your-profile/',
+    linkedinUrl: 'https://www.linkedin.com/in/hecogo/',
     cvUrl: 'https://example.com/replace-with-your-cv.pdf',
-    email: 'mailto:hello@example.com',
+    email: 'mailto:cozar1992@hotmail.com',
   },
   images: {
     heroPortrait: '',
