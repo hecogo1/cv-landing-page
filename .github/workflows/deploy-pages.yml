@@ -48,7 +48,9 @@ jobs:
           fi
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          rm -f package-lock.json
+          npm install --package-lock=false
 
       - name: Install Tailwind WASI fallback
         run: npm install --no-save --force @tailwindcss/oxide-wasm32-wasi@4.2.1
