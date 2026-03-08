@@ -11,6 +11,7 @@ import { Section } from '../components/Section';
 import { Timeline } from '../components/Timeline';
 import { ValueCard } from '../components/ValueCard';
 import { PhotoGrid } from '../components/PhotoGrid';
+import { CaseStudiesTabs } from '../components/CaseStudiesTabs';
 
 const basePath = import.meta.env.BASE_URL.endsWith('/')
   ? import.meta.env.BASE_URL.slice(0, -1)
@@ -306,16 +307,8 @@ export default function App() {
           </div>
         </section>
 
-        {/* Case studies */}
-        <Section id="transformations" eyebrow="Evidence" title={siteContent.caseStudies.title}>
-          <div className="grid gap-8 xl:grid-cols-2">
-            {siteContent.caseStudies.items.map((study, index) => (
-              <Reveal key={study.title} delay={index * 0.05}>
-                <CaseStudyCard study={study} />
-              </Reveal>
-            ))}
-          </div>
-        </Section>
+        {/* Case studies (Interactive Tabs) */}
+        <CaseStudiesTabs cases={siteContent.caseStudies.items} title={siteContent.caseStudies.title} />
 
         {/* How I work — numbered horizontal cards */}
         <Section id="how-i-work" eyebrow="Operating style" title={siteContent.howIWork.title} className="section-alt">

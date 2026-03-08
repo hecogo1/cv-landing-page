@@ -13,6 +13,18 @@
   --color-accent: #2d4a46;
   --color-accent-soft: #e0ebe8;
   --color-highlight: #b07840;
+
+  --animate-fade-in: fade-in 0.4s ease-out forwards;
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
 
 @layer base {
