@@ -12,7 +12,7 @@ export const siteContent = {
   },
   links: {
     linkedinUrl: 'https://www.linkedin.com/in/hecogo/',
-    cvUrl: 'https://example.com/replace-with-your-cv.pdf',
+    cvUrl: '/My Resume 2026.pdf',
     email: 'mailto:cozar1992@hotmail.com',
   },
   images: {
