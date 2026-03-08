@@ -56,12 +56,12 @@ export const siteContent = {
     },
   },
   signalStrip: [
-    'Early technical curiosity',
-    'Research background',
-    'SQL at scale',
-    'Automation mindset',
-    'Tooling adoption',
-    'Technical enablement',
+    'Bitcoin',
+    'Blockchain',
+    'Data Science',
+    'AI',
+    'Cutting Edge Technology',
+    'Real World Impact',
   ],
   summary: {
     title: 'A profile built across systems, analysis, and people',
@@ -290,7 +290,7 @@ export const siteContent = {
     title: 'What I’m building next',
     paragraphs: [
       'I want to keep growing on the technical side while staying close to the kind of work that has always suited me best: improving systems, accelerating teams, and turning scattered or inefficient ways of working into clearer and more scalable ones.',
-      'I am especially interested in environments where Bitcoin, Blockchain, Data Science, AI, and Cutting Edge Technology are driving Real World Impact. Ultimately, I believe that while technology is the tool, people and soft skills are the core of any successful project.',
+      'I am especially interested in environments where Bitcoin, Blockchain, Data Science, AI, Cutting Edge Technology, Real World Impact, and soft skills matter more than buzzwords.',
     ],
   },
   contact: {
