@@ -193,11 +193,11 @@ export const siteContent = {
     ],
   },
   caseStudies: {
-    title: 'Selected transformations',
+    title: 'Real-World Impact',
     items: [
       {
         imageKey: 'sqlScale',
-        title: 'Learning SQL where performance actually matters',
+        title: 'Querying at Enterprise Scale',
         context:
           'I entered CaixaBank through a long selection process that ended with a datathon focused on predictive modeling. Once inside, the reality was completely different: instead of building models, I found myself working in large-scale SQL environments with hundreds of millions of records.',
         challenge:
@@ -210,7 +210,7 @@ export const siteContent = {
       },
       {
         imageKey: 'dataQuality',
-        title: 'From manual data quality processes to automation',
+        title: 'Removing External Dependencies',
         context:
           'Some of the processes we depended on were owned by other teams. Requests were slow, coordination was inefficient, and there was resistance to taking ownership internally.',
         challenge: 'The team had accepted this dependency as normal. I had not.',
@@ -222,7 +222,7 @@ export const siteContent = {
       },
       {
         imageKey: 'sasToSql',
-        title: 'Translating SAS processes into faster SQL-based flows',
+        title: 'From 1 Week to 1.5 Hours',
         context:
           'Some existing processes were built in SAS, ran slowly, depended on local execution, and required manual supervision.',
         challenge: 'The workflow was too slow and too fragile for the amount of value it delivered.',
@@ -234,7 +234,7 @@ export const siteContent = {
       },
       {
         imageKey: 'enablement',
-        title: 'Tooling adoption, enablement, and technical diffusion',
+        title: 'Driving Technical Adoption',
         context:
           'As the team evolved, I increasingly found myself not only building or improving workflows, but also helping others adopt better tools and practices.',
         challenge:
