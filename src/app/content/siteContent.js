@@ -222,7 +222,7 @@ export const siteContent = {
       },
       {
         imageKey: 'sasToSql',
-        title: 'From 1 Week to 1.5 Hours',
+        title: 'From One Week to 1.5 Hours',
         context:
           'Some existing processes were built in SAS, ran slowly, depended on local execution, and required manual supervision.',
         challenge: 'The workflow was too slow and too fragile for the amount of value it delivered.',
