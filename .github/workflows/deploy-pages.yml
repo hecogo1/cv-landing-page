@@ -51,6 +51,8 @@ jobs:
         run: npm install
 
       - name: Build
+        env:
+          NAPI_RS_FORCE_WASI: '1'
         run: npm run build
 
       - name: Upload artifact
