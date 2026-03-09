@@ -21,7 +21,7 @@ export function NavBar({ brand, links, cvUrl }) {
   return (
     <header className="sticky top-0 z-40 px-4 pt-3 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-6xl">
-        <div className="rounded-xl border border-line/50 bg-surface/95 px-5 py-3 shadow-[0_1px_3px_rgba(0,0,0,0.04)] backdrop-blur-md sm:px-6">
+        <div className="rounded-xl border border-line/40 bg-surface/80 px-5 py-3 shadow-[0_2px_8px_rgba(0,0,0,0.06),0_1px_2px_rgba(0,0,0,0.04)] ring-1 ring-white/50 backdrop-blur-xl sm:px-6">
           <div className="flex items-center justify-between gap-4">
             <a href="#top" className="min-w-0">
               <span className="block text-base font-bold tracking-tight text-ink">{brand}</span>

@@ -271,7 +271,7 @@ export default function App() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
                 <div className="absolute bottom-0 left-0 p-6 sm:p-8">
                   <p className="text-xs font-bold uppercase tracking-[0.2em] text-white/60">Current chapter</p>
-                  <p className="mt-1 text-lg font-semibold text-white sm:text-xl">CaixaBank Tech — Data Engineering</p>
+                  <p className="mt-1 text-lg font-semibold text-white sm:text-xl">CaixaBank — Risk Data Team</p>
                 </div>
               </div>
             </div>
