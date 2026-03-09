@@ -377,7 +377,7 @@ export default function App() {
                 <div className="rounded-xl border border-white/10 bg-white/[0.07] p-6">
                   <p className="text-[0.6875rem] font-bold uppercase tracking-[0.2em] text-white/50">Focus areas</p>
                   <div className="mt-3 flex flex-wrap gap-2">
-                    {['Data engineering', 'Analytics', 'Automation', 'Adoption', 'Technical judgment'].map((item) => (
+                    {['Data engineering', 'Analytics', 'Automation', 'Adoption', 'Bitcoin', 'Blockchain', 'Data Science', 'AI', 'Cutting Edge Technology', 'Real World Impact', 'Psychology'].map((item) => (
                       <span
                         key={item}
                         className="inline-flex rounded-full border border-white/15 bg-white/10 px-3 py-1.5 text-sm font-medium text-white/80"

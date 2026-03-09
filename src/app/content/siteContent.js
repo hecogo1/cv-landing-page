@@ -113,18 +113,18 @@ export const siteContent = {
     items: [
       {
         year: '2023 – now',
-        title: 'Data Engineer',
+        title: 'Analytics Engineer',
         org: 'CaixaBank',
         desc: 'SQL at scale, automation, data quality, enablement, and migration across core banking data systems.',
       },
       {
         year: '2023',
-        title: 'Data Analyst',
+        title: 'Junior Data Scientist',
         org: 'Days',
         desc: 'First hands-on step into professional data work — analytics, dashboards, and product metrics.',
       },
       {
-        year: '2022 – 2023',
+        year: '2021 – 2022',
         title: "Master's in Big Data & Data Science",
         org: 'University',
         desc: 'Python, cloud, ML pipelines, and large-scale data processing.',
@@ -138,7 +138,7 @@ export const siteContent = {
       {
         year: '2020 – 2021',
         title: 'Psychometric Analyst',
-        org: 'Testing company',
+        org: 'Giunty EOS Psychometrics',
         desc: 'Item analysis, test construction, and applied measurement in a professional setting.',
       },
       {
@@ -290,7 +290,7 @@ export const siteContent = {
     title: 'What I’m building next',
     paragraphs: [
       'I want to keep growing on the technical side while staying close to the kind of work that has always suited me best: improving systems, accelerating teams, and turning scattered or inefficient ways of working into clearer and more scalable ones.',
-      'I am especially interested in environments where Bitcoin, Blockchain, Data Science, AI, Cutting Edge Technology, Real World Impact, and soft skills matter more than buzzwords.',
+      'I am especially interested in environments where data engineering, analytics, automation, tooling adoption, and practical technical judgment matter more than buzzwords.',
     ],
   },
   contact: {
