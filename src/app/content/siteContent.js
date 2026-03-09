@@ -84,7 +84,7 @@ export const siteContent = {
       'From there, I moved into Psychology. That decision shaped me deeply. During my degree, I became increasingly interested in research, statistics, psychometrics, and technical problem-solving. In a way, I ended up returning to technology through a different door: not because I loved computers for their own sake, but because I was fascinated by systems, measurement, and the logic behind how things work.',
       'I collaborated in academic research projects involving intelligence assessment, museum preference models, and data simulation in R. That was also where programming became real for me. I started with R, and I quickly realised I genuinely loved building things through code.',
       'Later, I completed advanced study in research methodology and psychometrics, and then spent a year in Australia before COVID to improve my English. That period mattered to me not just personally, but professionally: it was a deliberate investment in becoming more capable and more prepared.',
-      'When I returned, I worked first in a psychometric testing company and later at Invisalign, where I strengthened something that would become central in my career: the ability to connect technical understanding with business and client-facing reality.',
+      'When I returned, I worked first in a psychometric testing company and later at Align Technology (AKA Invisalign), where I strengthened something that would become central in my career: the ability to connect technical understanding with business and client-facing reality.',
       'After completing a Master’s degree in Big Data and Data Science, that combination finally gave me access to the data world professionally. It became the bridge into the field I work in now.',
     ],
     imageSlots: [
@@ -122,19 +122,19 @@ export const siteContent = {
       {
         year: '2023',
         title: 'Junior Data Scientist',
-        org: 'Days',
+        org: 'New Insurance Broker Web - NIBW',
         desc: 'First hands-on step into professional data work — analytics, dashboards, and product metrics.',
       },
       {
         year: '2021 – 2022',
         title: "Master's in Big Data & Data Science",
-        org: 'University',
+        org: 'Complutense University of Madrid',
         desc: 'Python, cloud, ML pipelines, and large-scale data processing.',
       },
       {
         year: '2021 – 2022',
         title: 'Technology & Client Operations',
-        org: 'Invisalign',
+        org: 'Align Technology',
         desc: 'Technology adoption, client support, and exposure to corporate product operations.',
       },
       {
@@ -146,25 +146,25 @@ export const siteContent = {
       {
         year: '2019 – 2020',
         title: 'English immersion year',
-        org: 'Australia',
+        org: 'Sydney, Australia',
         desc: 'Full language immersion before COVID — communication skills & independence.',
       },
       {
         year: '2018 – 2019',
         title: "Master's in Research Methods & Psychometrics",
-        org: 'University',
+        org: 'Complutense University of Madrid',
         desc: 'Advanced statistics, measurement theory, and research design.',
       },
       {
         year: '2015 – 2019',
         title: 'Research collaborations',
-        org: 'University labs',
+        org: 'Complutense University of Madrid',
         desc: 'Intelligence, museum visitor behaviour, driving simulation — data collection and analysis with R.',
       },
       {
         year: '2014 – 2018',
         title: 'Psychology degree',
-        org: 'University',
+        org: 'Complutense University of Madrid',
         desc: 'Research methodology, statistics, psychometrics, and programming in R.',
       },
     ],
