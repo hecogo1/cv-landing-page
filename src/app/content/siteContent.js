@@ -1,3 +1,5 @@
+const base = import.meta.env.BASE_URL;
+
 export const siteContent = {
   meta: {
     title: 'Héctor Cózar',
@@ -12,18 +14,18 @@ export const siteContent = {
   },
   links: {
     linkedinUrl: 'https://www.linkedin.com/in/hecogo/',
-    cvUrl: '/My Resume 2026.pdf',
+    cvUrl: `${base}my-resume-2026.pdf`,
     email: 'mailto:cozar1992@hotmail.com',
   },
   images: {
-    heroPortrait: '/images/profile picture.jpg',
+    heroPortrait: `${base}images/profile-picture.jpg`,
     story: {
-      fixingComputers: '/images/mwc.jpeg',
-      research: '/images/research-crop-rightcenter.jpg',
-      australia: '/images/sydney.jpg',
-      professional: '/images/microsoft-visit.jpeg',
+      fixingComputers: `${base}images/mwc.jpeg`,
+      research: `${base}images/research-crop-rightcenter.jpg`,
+      australia: `${base}images/sydney.jpg`,
+      professional: `${base}images/microsoft-visit.jpeg`,
     },
-    team: '/images/team-caixa.jpeg',
+    team: `${base}images/team-caixa.jpeg`,
     caseStudies: {
       sqlScale: '',
       dataQuality: '',
