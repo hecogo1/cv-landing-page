@@ -1,52 +1,17 @@
-# Héctor Cózar - Personal Professional Website
+# Héctor Cózar — Personal Website
 
-Single-page React app built with Vite, Tailwind CSS, and Framer Motion.
+Portfolio and professional landing page of Héctor Cózar.
 
-## Run locally
+**→ [hecogo1.github.io/cv-landing-page](https://hecogo1.github.io/cv-landing-page/)**
+
+## Development
+
+Built with React, Vite, Tailwind CSS, and Framer Motion.
 
 ```bash
 npm install
 npm run dev
 ```
-
-Build for production:
-
-```bash
-npm run build
-npm run preview
-```
-
-## Customize content
-
-Most text, links, and image placeholders live in:
-
-- `src/app/content/siteContent.js`
-
-Update these placeholders first:
-
-- `links.linkedinUrl`
-- `links.cvUrl`
-- `links.email`
-- `images.heroPortrait`
-- `images.story.*`
-- `images.caseStudies.*`
-
-If an image path is empty, the UI shows a styled placeholder instead of a broken layout.
-
-## Project structure
-
-- `src/app/App.jsx`: page composition and metadata sync
-- `src/app/content/siteContent.js`: centralized editable content
-- `src/components/*`: reusable UI building blocks
-- `public/favicon.svg`: fallback favicon
-- `public/og-cover.svg`: default social preview image
-- `public/404.html`: simple static safeguard for incorrect routes
-
-## Deployment notes
-
-This is a single-page site intended for static hosting. Deploy the built `dist/` output to Vercel, Netlify, GitHub Pages, or any static host.
-
-If your host supports custom 404 handling, keep `public/404.html` so incorrect routes still resolve to a helpful fallback page.
 
 ## GitHub Pages
 
