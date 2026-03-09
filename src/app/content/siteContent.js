@@ -7,7 +7,7 @@ export const siteContent = {
   },
   brand: {
     name: 'Héctor Cózar',
-    roleBadge: 'Data Engineer / Analytics Engineer',
+    roleBadge: 'Data Scientist / Analytics Engineer',
     trajectoryLabel: 'Psychology → Research → Data → Systems',
   },
   links: {
@@ -56,12 +56,12 @@ export const siteContent = {
     },
   },
   signalStrip: [
-    'Bitcoin',
-    'Blockchain',
-    'Data Science',
-    'AI',
-    'Cutting Edge Technology',
-    'Real World Impact',
+    'Early technical curiosity',
+    'Research background',
+    'SQL at scale',
+    'Automation mindset',
+    'Real-world impact',
+    'Team enablement',
   ],
   summary: {
     title: 'A profile built across systems, analysis, and people',
