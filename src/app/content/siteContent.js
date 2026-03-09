@@ -298,9 +298,9 @@ export const siteContent = {
     text:
       'If you think my profile could be useful in your team, or if you simply want to talk about data, systems, tooling, or workflow improvement, feel free to reach out.',
     buttons: [
-      { label: 'LinkedIn', linkKey: 'linkedinUrl' },
-      { label: 'Email', linkKey: 'email' },
       { label: 'Download CV', linkKey: 'cvUrl' },
+      { label: 'Email', linkKey: 'email' },
+      { label: 'LinkedIn', linkKey: 'linkedinUrl' },
     ],
   },
   footer: {
