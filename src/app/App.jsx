@@ -157,10 +157,12 @@ function Hero() {
           <img
             src={images.heroPortrait}
             alt="Héctor Cózar"
-            className="aspect-[4/3] w-full object-cover object-top"
+            className="aspect-[16/10] w-full object-cover object-center"
             loading="eager"
           />
-          <div className="absolute inset-0 bg-accent/20 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-accent/30 mix-blend-multiply" />
+          <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-accent to-transparent" />
+          <div className="absolute inset-x-0 top-0 h-14 bg-gradient-to-b from-accent/60 to-transparent" />
           <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-accent/40 to-transparent" />
         </div>
       </div>
