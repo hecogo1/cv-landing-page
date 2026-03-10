@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Héctor Cózar</title>
+  <desc id="desc">Personal professional website cover image.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8f3ec" />
+      <stop offset="55%" stop-color="#f1ebe3" />
+      <stop offset="100%" stop-color="#e6ddd2" />
+    </linearGradient>
+    <radialGradient id="glow" cx="20%" cy="15%" r="75%">
+      <stop offset="0%" stop-color="#d9e3df" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#d9e3df" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#glow)" />
+  <g fill="none" stroke="#c8bcad" stroke-width="1">
+    <path d="M80 520c140-40 240-48 360-12s240 46 360 10 210-62 320-34" />
+    <path d="M80 566c144-32 252-30 360 4s228 36 340 4 220-64 340-40" />
+  </g>
+  <rect x="72" y="74" width="1056" height="482" rx="30" fill="none" stroke="#d6ccbf" />
+  <text x="120" y="196" fill="#3f5a56" font-size="28" font-family="Manrope, sans-serif" letter-spacing="6">
+    DATA ENGINEER / ANALYTICS ENGINEER
+  </text>
+  <text x="120" y="304" fill="#1f1c17" font-size="76" font-family="Fraunces, serif" font-weight="600">
+    Héctor Cózar
+  </text>
+  <text x="120" y="392" fill="#675f55" font-size="34" font-family="Manrope, sans-serif">
+    From psychology to data engineering
+  </text>
+  <text x="120" y="438" fill="#675f55" font-size="34" font-family="Manrope, sans-serif">
+    building better systems, workflows, and ways of working.
+  </text>
+</svg>
