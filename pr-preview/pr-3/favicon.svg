@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>HC favicon</title>
+  <rect width="64" height="64" rx="18" fill="#1f1c17" />
+  <path
+    d="M20 17h6v12h12V17h6v30h-6V35H26v12h-6V17Zm30 0h-6v30h6V17Z"
+    fill="#f4efe8"
+  />
+</svg>

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page not found | Héctor Cózar</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <style>
+      :root {
+        color-scheme: light;
+        --canvas: #f4efe8;
+        --surface: rgba(255, 250, 243, 0.88);
+        --ink: #1f1c17;
+        --muted: #675f55;
+        --line: #ded4c6;
+        --accent: #3f5a56;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 32px;
+        background:
+          radial-gradient(circle at top left, rgba(63, 90, 86, 0.16), transparent 28%),
+          linear-gradient(180deg, #f8f3ec 0%, var(--canvas) 100%);
+        color: var(--ink);
+        font-family: "Manrope", "Segoe UI", sans-serif;
+      }
+
+      main {
+        width: min(100%, 720px);
+        padding: 48px;
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        background: var(--surface);
+        box-shadow: 0 24px 70px rgba(28, 25, 21, 0.08);
+      }
+
+      .eyebrow {
+        margin: 0 0 20px;
+        color: var(--accent);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.24em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0 0 16px;
+        font-size: clamp(2.4rem, 4vw, 3.4rem);
+        line-height: 1.05;
+        font-family: "Fraunces", Georgia, serif;
+      }
+
+      p {
+        margin: 0 0 28px;
+        color: var(--muted);
+        font-size: 1.05rem;
+        line-height: 1.8;
+      }
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 14px 18px;
+        border-radius: 999px;
+        background: var(--ink);
+        color: #f8f3ec;
+        font-weight: 700;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">Single-page site</p>
+      <h1>This route does not exist.</h1>
+      <p>
+        The site is designed as a single-page landing page. Use the home link below to return to the main
+        experience.
+      </p>
+      <a href="./">Back to home</a>
+    </main>
+  </body>
+</html>
