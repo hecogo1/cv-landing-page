@@ -1,0 +1,59 @@
+name: PR Preview (GitHub Pages)
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize, closed]
+
+permissions:
+  contents: write
+  pages: write
+  pull-requests: write
+
+concurrency:
+  group: pr-preview-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    env:
+      NODE_VERSION: '22'
+    steps:
+      - name: Checkout
+        if: github.event.action != 'closed'
+        uses: actions/checkout@v6
+
+      - name: Setup Node
+        if: github.event.action != 'closed'
+        uses: actions/setup-node@v6
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+
+      - name: Configure preview base path
+        if: github.event.action != 'closed'
+        run: |
+          echo "VITE_BASE_PATH=/pr-preview/pr-${{ github.event.pull_request.number }}/" >> "$GITHUB_ENV"
+
+      - name: Install dependencies
+        if: github.event.action != 'closed'
+        run: |
+          rm -f package-lock.json
+          npm install --package-lock=false
+
+      - name: Install Tailwind WASI fallback
+        if: github.event.action != 'closed'
+        run: npm install --no-save --force @tailwindcss/oxide-wasm32-wasi@4.2.1
+
+      - name: Build
+        if: github.event.action != 'closed'
+        env:
+          NAPI_RS_FORCE_WASI: '1'
+        run: npm run build
+
+      - name: Deploy PR preview
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: ./dist
+          preview-branch: gh-pages
+          umbrella-dir: pr-preview
