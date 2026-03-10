@@ -79,6 +79,19 @@ function resolveContentLink(link) {
 function Hero() {
   const { brand, hero, images } = siteContent;
 
+  const heroImageConfig = {
+    src: images.heroPortrait,
+    alt: 'Héctor Cózar',
+    overlayIntensity: {
+      desktop: 'bg-accent/30',
+      mobile: 'bg-accent/20',
+    },
+    objectPositionByBreakpoint: {
+      desktop: 'object-center',
+      mobile: 'object-top',
+    },
+  };
+
   return (
     <section id="top" className="relative overflow-hidden px-6 pb-6 pt-6 sm:px-8 lg:px-12 lg:pb-10 lg:pt-10">
       <div className="mx-auto w-full max-w-6xl">
@@ -138,13 +151,13 @@ function Hero() {
             {/* Hero photo - elegant crop */}
             <div className="relative hidden h-full w-80 lg:block xl:w-96">
               <img
-                src={images.heroPortrait}
-                alt="Héctor Cózar"
-                className="h-full w-full object-cover"
+                src={heroImageConfig.src}
+                alt={heroImageConfig.alt}
+                className={`h-full w-full object-cover ${heroImageConfig.objectPositionByBreakpoint.desktop}`}
                 loading="eager"
               />
               {/* Color blend overlay to unify photo with card background */}
-              <div className="absolute inset-0 bg-accent/30 mix-blend-multiply" />
+              <div className={`absolute inset-0 mix-blend-multiply ${heroImageConfig.overlayIntensity.desktop}`} />
               {/* Edge gradients */}
               <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-accent to-transparent" />
               <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-accent/60 to-transparent" />
@@ -152,15 +165,16 @@ function Hero() {
             </div>
           </div>
         </div>
+        {/* Shared hero image config keeps cross-device visuals aligned while layout remains breakpoint-specific. */}
         {/* Mobile hero photo */}
         <div className="relative mt-6 overflow-hidden rounded-2xl lg:hidden">
           <img
-            src={images.heroPortrait}
-            alt="Héctor Cózar"
-            className="aspect-[4/3] w-full object-cover object-top"
+            src={heroImageConfig.src}
+            alt={heroImageConfig.alt}
+            className={`aspect-[4/3] w-full object-cover ${heroImageConfig.objectPositionByBreakpoint.mobile}`}
             loading="eager"
           />
-          <div className="absolute inset-0 bg-accent/20 mix-blend-multiply" />
+          <div className={`absolute inset-0 mix-blend-multiply ${heroImageConfig.overlayIntensity.mobile}`} />
           <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-accent/40 to-transparent" />
         </div>
       </div>
